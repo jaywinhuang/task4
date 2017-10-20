@@ -1,0 +1,35 @@
+to-do list:
+
+【done】index.html
+【done】log-in.html
+【done】register.html
+【done】register-success.html
+【done】index-login.html
+category.html (integrate with index.html)
+
+search-result.html
+details.html
+cart.html (?)
+checkout.html (?)
+order-complete.html (?)
+
+
+revision:
+original
+revision1
+revision2
+
+UPMC's in-house pharmacies homepage (1)
+Log-in screen (1)
+Log-in results screen (1)
+Register new user screen (1)
+Product category screens that show all the products in a category (2+).
+Search screen (1)
+
+
+Product details screen for a single product (2+)
+Search results screen. Note that this should be different from product category screens (1)
+All of the screens for the Purchasing process, which should include:
+Form(s) for making a purchase (1+)
+Purchase confirmation screen (1)
+A view of the shopping cart with the item(s) in it (1)
