@@ -5,7 +5,7 @@
     
     <!-- Basic page needs
   ============================================ -->
-  <title></title>
+  <title>Cart</title>
   <meta charset="utf-8">
     <meta name="keywords" content="" />
     <meta name="author" content="Magentech">
@@ -41,24 +41,54 @@
     <link href="css/themecss/so_megamenu.css" rel="stylesheet">
     <link href="css/themecss/so-categories.css" rel="stylesheet">
   <link href="css/themecss/so-listing-tabs.css" rel="stylesheet">
-  
-    <link id="color_scheme" href="css/theme.css" rel="stylesheet">
-    
+  <link id="color_scheme" href="css/theme.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <!-- Latest Bootstrap min CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+  <!-- Dropdownhover CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap-dropdownhover.min.css" type="text/css">
+  <!-- latest fonts awesome -->
+  <link rel="stylesheet" href="assets/font/css/font-awesome.min.css" type="text/css">
+  <!-- simple line fonts awesome -->
+  <link rel="stylesheet" href="assets/simple-line-icon/css/simple-line-icons.css" type="text/css">
+  <!-- stroke-gap-icons -->
+  <link rel="stylesheet" href="assets/stroke-gap-icons/stroke-gap-icons.css" type="text/css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="assets/css/animate.min.css" type="text/css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="assets/css/slider.css" type="text/css">
+  <!--  baguetteBox -->
+  <link rel="stylesheet" href="assets/css/baguetteBox.css">
+  <!-- Owl Carousel Assets -->
+  <link href="assets/owl-carousel/owl.carousel.css" rel="stylesheet">
+  <link href="assets/owl-carousel/owl.theme.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
   
-   
-  
+
 </head>
- <body class="res layout-subpage banners-effect-6">
+
+<body class="common-home res layout-home1 loaded">
 
      
 
 
-    <div id="wrapper" class="wrapper-full ">
+    <div id="wrapper" class="wrapper-full banners-effect-7">
   <!-- Header Container  -->
   <header id="header" class=" variantleft type_1">
 <!-- Header Top -->
-<div class="header-top">
+<div class="header-top compact-hidden">
   <div class="container">
     <div class="row">
       <div class="header-top-left form-inline col-sm-6 col-xs-12 compact-hidden">
@@ -100,9 +130,9 @@
                 <li><a href="login.html"><i class="fa fa-pencil-square-o"></i> Login</a></li>
               </ul>
             </li>
-            <li class="wishlist"><a href="#" id="wishlist-total" class="top-link-wishlist" title="Wish List (2)"><span>Wish List (2)</span></a></li>
-            <li class="checkout"><a href="#" class="top-link-checkout" title="Checkout"><span >Checkout</span></a></li>
-            <li class="login"><a href="#" title="Shopping Cart"><span >Shopping Cart</span></a></li>
+            <!--<li class="wishlist"><a href="#" id="wishlist-total" class="top-link-wishlist" title="Wish List (2)"><span>Wish List (2)</span></a></li>-->
+            <!--<li class="checkout"><a href="#" class="top-link-checkout" title="Checkout"><span >Checkout</span></a></li>-->
+            <!--<li class="login"><a href="#" title="Shopping Cart"><span >Shopping Cart</span></a></li>-->
           </ul>
         </div>
       </div>
@@ -145,7 +175,7 @@
           <input type="hidden" name="route" value="product/search" />
         </form>
       </div>
-      <!-- //end Search -->
+
       <!-- Secondary menu -->
       <div class="col-md-2 col-sm-5 col-xs-12 shopping_cart pull-right">
         <!--cart-->
@@ -157,7 +187,9 @@
               <p class="text-shopping-cart cart-total-full">2 item(s) - $182.20 </p>
             </div>
           </a>
+
           <ul class="tab-content content dropdown-menu pull-right shoppingcart-box" role="menu">
+            
             <li>
               <table class="table table-striped">
                 <tbody>
@@ -219,7 +251,7 @@
           </ul>
         </div>
         <!--//cart-->
-        </div>
+      </div>
     </div>
 
   </div>
@@ -230,21 +262,12 @@
 <div class="header-bottom">
   <div class="container">
     <div class="row">
-      
-      <div class="sidebar-menu col-md-3 col-sm-6 col-xs-12 ">
-        <div class="responsive so-megamenu ">
-          <div class="so-vertical-menu no-gutter compact-hidden">
-          </div>
-        </div>
 
-      </div>
-      
       <!-- Main menu -->
       <div class="megamenu-hori header-bottom-right  col-md-9 col-sm-6 col-xs-12 ">
         <div class="responsive so-megamenu ">
   <nav class="navbar-default">
     <div class=" container-megamenu  horizontal">
-      
       <div class="navbar-header">
         <button type="button" id="show-megamenu" data-toggle="collapse" class="navbar-toggle">
           <span class="icon-bar"></span>
@@ -261,155 +284,42 @@
             <ul class="megamenu " data-transition="slide" data-animationtime="250">
               <li class="home hover">
                 
-                <a href="index.html">Home <b class="caret"></b></a>
-                <div class="sub-menu" style="width:100%;" >
-                  <div class="content" >
-                    <div class="row">
-                      <div class="col-md-3">
-                        <a href="index.html" class="image-link"> 
-                          <span class="thumbnail">
-                            <img class="img-responsive img-border" src="image/demo/feature/home-1.jpg" alt="">
-                            <span class="btn btn-default">Read More</span>
-                          </span> 
-                          <h3 class="figcaption">Home page - (Default)</h3> 
-                        </a> 
-                        
-                      </div>
-                      <div class="col-md-3">
-                        <a href="#" class="image-link"> 
-                          <span class="thumbnail">
-                            <img class="img-responsive img-border" src="image/demo/feature/home-2.jpg" alt="">
-                            <span class="btn btn-default">Read More</span>
-                          </span> 
-                          <h3 class="figcaption">Home page - Layout 2</h3> 
-                        </a> 
-                        
-                      </div>
-                      <div class="col-md-3">
-                        <a href="#" class="image-link"> 
-                          <span class="thumbnail">
-                            <img class="img-responsive img-border" src="image/demo/feature/home-3.jpg" alt="">
-                            <span class="btn btn-default">Read More</span>
-                          </span> 
-                          <h3 class="figcaption">Home page - Layout 3</h3> 
-                        </a> 
-                        
-                      </div>
-                      <div class="col-md-3">
-                        <a href="#" class="image-link"> 
-                          <span class="thumbnail">
-                            <img class="img-responsive img-border" src="image/demo/feature/home-4.jpg" alt="">
-                            <span class="btn btn-default">Read More</span>
-                          </span> 
-                          <h3 class="figcaption">Home page - Layout 4</h3> 
-                        </a> 
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <a href="index.html">Home</a>
               </li>
               <li class="with-sub-menu hover">
                 <p class="close-menu"></p>
                 <a href="#" class="clearfix">
-                  <strong>Features</strong>
-                  <b class="caret"></b>
+                  <strong>Store Nearby</strong>
                 </a>
-                <div class="sub-menu" style="width: 100%; right: auto;">
-                  <div class="content" >
-                    <div class="row">
-                      <div class="col-md-3">
-                        <div class="column">
-                          <a href="#" class="title-submenu">Listing pages</a>
-                          <div>
-                            <ul class="row-list">
-                              <li><a href="category.html">Category Page 1 </a></li>
-                              <li><a href="#">Category Page 2</a></li>
-                              <li><a href="#">Category Page 3</a></li>
-                            </ul>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div class="column">
-                          <a href="#" class="title-submenu">Product pages</a>
-                          <div>
-                            <ul class="row-list">
-                              <li><a href="product.html">Image size - big</a></li>
-                              <li><a href="#">Image size - medium</a></li>
-                              <li><a href="#">Image size - small</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div class="column">
-                          <a href="#" class="title-submenu">Shopping pages</a>
-                          <div>
-                            <ul class="row-list">
-                              <li><a href="#">Shopping Cart Page</a></li>
-                              <li><a href="#">Checkout Page</a></li>
-                              <li><a href="#">Compare Page</a></li>
-                              <li><a href="#">Wishlist Page</a></li>
-                            
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div class="column">
-                          <a href="#" class="title-submenu">My Account pages</a>
-                          <div>
-                            <ul class="row-list">
-                              <li><a href="login.html">Login Page</a></li>
-                              <li><a href="register.html">Register Page</a></li>
-                              <li><a href="#">My Account</a></li>
-                              <li><a href="#">Order History</a></li>
-                              <li><a href="#">Order Information</a></li>
-                              <li><a href="#">Product Returns</a></li>
-                              <li><a href="#">Gift Voucher</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </li>
               <li class="with-sub-menu hover">
                 <p class="close-menu"></p>
                 <a href="#" class="clearfix">
-                  <strong>Pages</strong>
-                  <b class="caret"></b>
+                  <strong>Promotions</strong>
+                  <span class="label"></span>
                 </a>
-                <div class="sub-menu" style="width: 40%; ">
-                  <div class="content" >
-                    <div class="row">
-                      <div class="col-md-6">
-                        <ul class="row-list">
-                          <li><a class="subcategory_item" href="#">FAQ</a></li>
-                          <li><a class="subcategory_item" href="#">Typography</a></li>
-                          <li><a class="subcategory_item" href="#">Site Map</a></li>
-                          <li><a class="subcategory_item" href="#">Contact us</a></li>
-                          <li><a class="subcategory_item" href="#">Banner Effect</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-md-6">
-                        <ul class="row-list">
-                          <li><a class="subcategory_item" href="#">About Us 1</a></li>
-                          <li><a class="subcategory_item" href="#">About Us 2</a></li>
-                          <li><a class="subcategory_item" href="#">About Us 3</a></li>
-                          <li><a class="subcategory_item" href="#">About Us 4</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </li>
-              
+              <li class="with-sub-menu hover">
+                <p class="close-menu"></p>
+                <a href="#" class="clearfix">
+                  <strong>Health Information</strong>
+                </a>
+              </li>
+              <li class="with-sub-menu hover">
+                <p class="close-menu"></p>
+                <a href="#" class="clearfix">
+                  <strong>About Us</strong>
+                </a>
+              </li>
+              <li class="">
+                <p class="close-menu"></p>
+                <a href="#" class="clearfix">
+                  <strong>Help</strong>
+                  <span class="label"></span>
+                </a>
+              </li>
             </ul>
-            
+
           </div>
         </div>
       </div>
@@ -423,99 +333,120 @@
   </div>
 
 </div>
-<!--cart-->
-        <section id="shop-col-3" class="ptb-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="cart-list text-center">
-              <li>
-              <table class="table table-striped">
-                <thead>
-                    <tr>
-                      <th class="text-center" style="width:370px">Product</th>
-                      <th class="text-right" style="width:370px">Quantity</th>
-                      <th class="text-right" style="width:370px">Price</th>
-                      <th class="text-right" style="width:370px">Total</th>
-                      <th class="text-center" style="width:370px"></th>
-                      <th class="text-center" style="width:370px"></th>
-                    </tr>
-                  </thead>
-                <tbody>
-                <thead>
-                  <tr>
-                    <td class="text-center" style="width:70px">
-                      <a href="product.html"> <img src="image/demo/shop/product/j9.jpg" style="width:70px" alt="Medicine1" title="Medicine1" class="preview"> </a>
-                    </td>
-                    <td class="text-left"> <a class="cart_product_name" href="product.html">Medicine 1</a> </td>
-                    <td class="text-center"> x1 </td>
-                    <td class="text-center"> $120.20 </td>
-                    <td class="text-center"> $120.20 </td>
-                    <td class="text-right">
-                      <a href="product.html" class="fa fa-edit"></a>
-                    </td>
-                    <td class="text-right">
-                      <a onclick="cart.remove('2');" class="fa fa-times fa-delete"></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-center" style="width:70px">
-                      <a href="product.html"> <img src="image/demo/shop/product/j4.jpg" style="width:70px" alt="Medicine2" title="Medicine2" class="preview"> </a>
-                    </td>
-                    <td class="text-left"> <a class="cart_product_name" href="product.html">Medicine 2</a> </td>
-                    <td class="text-center"> x1 </td>
-                    <td class="text-center"> $60.00 </td>
-                    <td class="text-center"> $60.00 </td>
-                    <td class="text-right">
-                      <a href="product.html" class="fa fa-edit"></a>
-                    </td>
-                    <td class="text-right">
-                      <a onclick="cart.remove('1');" class="fa fa-times fa-delete"></a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </li>
-                  
-              </div>
-            </div>
-            <div class="cart_coupon_btn">
-                <table class="table table-bordered">
-                  <tbody>
-                    <tr>
-                      <td class="text-left"><strong>Sub-Total</strong>
-                      </td>
-                      <td class="text-right">$180.20</td>
-                    </tr>
-                    <tr>
-                      <td class="text-left"><strong>Eco Tax (-2.00)</strong>
-                      </td>
-                      <td class="text-right">$2.00</td>
-                    </tr>
-                    <tr>
-                      <td class="text-left"><strong>Total</strong>
-                      </td>
-                      <td class="text-right">$182.20</td>
-                    </tr>
-                  </tbody>
-                </table>
-                  <div class="bottom-form">
-                    <p class="text-right"><a class="btn btn-mega checkout-cart" href="#"><i class="fa fa-share"></i>Proceed to Checkout</a>
-                  </div>
-                <!--<p class="text-right"> <a class="btn view-cart" href="#"><i class="fa fa-shopping-cart"></i>View Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="#"><i class="fa fa-share"></i>Checkout</a> </p>-->
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Section Image Content  -->
-        <!--//cart-->
+
 <!-- Navbar switcher -->
 <!-- //end Navbar switcher -->
-        
-      
+  </header>
+  <section class="shopping-cart">
+    <!-- .shopping-cart -->
+            <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+                  <h2>You cart items</h2>
+                  <table>
+                     <tr>
+                        <th></th>
+                        <th>Product name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                        <th></th>
+                     </tr>
+                     <tr>
+                        <td><img src="image/demo/shop/product/j9.jpg" width="150" height="150" alt="13"></td>
+                        <td>Medicine 1</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing<br/> and typesetting industry.</td>
+                        <td><strong>$120.00</strong></td>
+                        <td><input type="number" name="quantity" min="1" max="500"></td>
+                        <td><strong>$120.00</strong></td>
+                        <td><span class="red"><i class="fa fa-times" aria-hidden="true"></i></span></td>
+                     </tr>
+                     <tr>
+                        <td><img src="image/demo/shop/product/j4.jpg" width="150" height="150" alt="13"></td>
+                        <td>Medicine 2</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing<br/> and typesetting industry.</td>
+                        <td><strong>$60.00</strong></td>
+                        <td><input type="number" name="quantity" min="1" max="500"></td>
+                        <td><strong>$60.00</strong></td>
+                        <td><span><i class="fa fa-times" aria-hidden="true"></i></span></td>
+                     </tr>
+                  </table>
+                  <div class="col-sm-6 col-md-6">
+                     <a href="#" class="button red">CONTINUE SHOPPING</a>
+                  </div>
+                  <div class="col-sm-6 col-md-6 text-right">
+                     <a href="#" class="button">UPDATE SHOPPING CART</a>
+                     <a href="#" class="button">CLEAR SHOPPING CART</a>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                     <div class="shipping-outer">
+                        <h2>Calculate shipping</h2>
+                        <div class="row">
+                           <div class="col-md-12 counttry">
+                              <div class="lable">Select your Counttry:</div>
+                              <input name="counttry" placeholder="United States (USA)" type="text">
+                           </div>
+                           <div class="col-sm-6 col-md-6">
+                              <div class="lable">Select your State:</div>
+                              <div class="size State">
+                                 <div class="select-option">
+                                    <select>
+                                       <option value="28">28</option>
+                                       <option value="32">32</option>
+                                       <option value="34">34</option>
+                                       <option value="36">36</option>
+                                       <option value="Featured Pots">State / City</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6 col-md-6">
+                              <div class="lable">Zip Code:</div>
+                              <input name="counttry" placeholder="Zip Code" type="text">
+                           </div>
+                        </div>
+                        <a href="#" class="button2">Update Shipping</a>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                     <div class="shipping-outer">
+                        <h2>Coupon code</h2>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="lable">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                              <input name="counttry" type="text">
+                           </div>
+                           <div class="col-md-12">
+                              <div class="lable">Coupon Code:</div>
+                              <input name="Coupon Code" placeholder="Coupon Code" type="text">
+                           </div>
+                        </div>
+                        <a href="#" class="button2">REdeem code</a>           
+                     </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                     <div class="shipping-outer">
+                        <h2>Cart totals</h2>
+                        <ul>
+                           <li>Cart Subtotal: <strong>$180.00</strong></li>
+                           <li>Shipping and Handling: <strong>$2.00</strong></li>
+                           <li>Cart Totals: <strong>$182.00</strong></li>
+                           <li class="text-center">
+                              <a href="#" class="redbutton">Proceed to checkout</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+        </div>
+               
+            </div>
+            <!-- /.shopping-cart -->
+         </section>
+
+
+
   <!-- Footer Container -->
   <footer class="footer-container">
     <!-- Footer Top Container -->
@@ -577,6 +508,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -586,7 +518,7 @@
     <div class="footer-bottom-block ">
       <div class=" container">
         <div class="row">
-          <div class="col-sm-5 copyright-text">Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
+          <div class="col-sm-5 copyright-text">Copyright &copy; 2017.Company name All rights reserved.</div>
           <div class="col-sm-7">
             <div class="block-payment text-right"><img src="image/demo/content/payment.png" alt="payment" title="payment" ></div>
           </div>
@@ -603,124 +535,39 @@
   <!-- //end Footer Container -->
 
     </div>
-  
-  
-  <!-- Cpanel Block -->
-  <div id="sp-cpanel_btn" class="isDown visible-lg">
-  <i class="fa fa-cog"></i>
-</div>    
-
-<div id="sp-cpanel" class="sp-delay">
-  <h2 class="sp-cpanel-title"> Demo Options <span class="sp-cpanel-close"> <i class="fa fa-times"> </i></span></h2>
-  <div id="sp-cpanel_settings">
-    <div class="panel-group">
-      <label>Color Scheme</label>
-      <div class="group-schemes" >
-        <span data-scheme="default"  class="item_scheme selected"><span style="background: #e8622d;"></span></span>
-        <span data-scheme="blue" class="item_scheme"><span style="background: #478bca;"></span></span>
-        <span data-scheme="boocdo"  class="item_scheme"><span style="background: #e54e4e;"></span></span>
-        <span data-scheme="cyan" class="item_scheme"><span style="background: #1ea181;"></span></span>
-        <span data-scheme="green" class="item_scheme "><span style="background: #52a633;"></span></span>
-        
-       </div>
-    </div>
-    
-    <div class="panel-group ">
-      <label>Header style</label>
-      <div class="group-boxed">
-        <select id="change_header_type" name="cpheaderstype" class="form-control" onchange="headerTypeChange(this.value);">
-          <option value="header-home1" >Header 1</option>
-          <option value="header-home2" >Header 2</option>
-          <option value="header-home3" >Header 3</option>
-          <option value="header-home4" >Header 4</option>
-        </select>
-      </div>
-    </div>
-    
-    
-    <div class="panel-group ">
-      <label>Layout Box</label>
-      <div class="group-boxed">
-        <select id="cp-layoutbox" name="cplayoutbox" class="form-control" onchange="changeLayoutBox(this.value);">
-          <option value="full">Wide</option>
-          <option value="boxed">Boxed</option>
-          <option value="iframed">Iframed</option>
-          <option value="rounded">Rounded</option>
-        </select>
-      </div>
-    </div>
-    
-        <div class="panel-group">
-      <label>Body Image</label>
-      
-      <div class="group-pattern">
-                <div data-pattern="28"  class="img-pattern"><img src="image/theme/patterns/28.png" alt="pattern 28"></div>
-                <div data-pattern="29"  class="img-pattern"><img src="image/theme/patterns/29.png" alt="pattern 29"></div>
-                <div data-pattern="30"  class="img-pattern"><img src="image/theme/patterns/30.png" alt="pattern 30"></div>
-                <div data-pattern="31"  class="img-pattern"><img src="image/theme/patterns/31.png" alt="pattern 31"></div>
-                <div data-pattern="32"  class="img-pattern"><img src="image/theme/patterns/32.png" alt="pattern 32"></div>
-                <div data-pattern="33"  class="img-pattern"><img src="image/theme/patterns/33.png" alt="pattern 33"></div>
-                <div data-pattern="34"  class="img-pattern"><img src="image/theme/patterns/34.png" alt="pattern 34"></div>
-                <div data-pattern="35"  class="img-pattern"><img src="image/theme/patterns/35.png" alt="pattern 35"></div>
-                <div data-pattern="36"  class="img-pattern"><img src="image/theme/patterns/36.png" alt="pattern 36"></div>
-                <div data-pattern="37"  class="img-pattern"><img src="image/theme/patterns/37.png" alt="pattern 37"></div>
-                <div data-pattern="38"  class="img-pattern"><img src="image/theme/patterns/38.png" alt="pattern 38"></div>
-                <div data-pattern="39"  class="img-pattern"><img src="image/theme/patterns/39.png" alt="pattern 39"></div>
-                <div data-pattern="40"  class="img-pattern"><img src="image/theme/patterns/40.png" alt="pattern 40"></div>
-                <div data-pattern="41"  class="img-pattern"><img src="image/theme/patterns/41.png" alt="pattern 41"></div>
-                <div data-pattern="42"  class="img-pattern"><img src="image/theme/patterns/42.png" alt="pattern 42"></div>
-                <div data-pattern="43"  class="img-pattern"><img src="image/theme/patterns/43.png" alt="pattern 43"></div>
-                <div data-pattern="44"  class="img-pattern"><img src="image/theme/patterns/44.png" alt="pattern 44"></div>
-                <div data-pattern="45"  class="img-pattern"><img src="image/theme/patterns/45.png" alt="pattern 45"></div>
-              </div>
-      <p class="label-sm">Background only applies for Boxed,Framed, Rounded Layout</p>
-    </div>
-    
-    <div class="reset-group">
-        <a href="index.html" class="btn btn-success " onclick="ResetAll()">Reset</a>
-    </div>
-    
-  </div>
-
-</div>
-
-
 
 <link rel='stylesheet' property='stylesheet'  href='css/themecss/cpanel.css' type='text/css' media='all' />
   
-  
-  <!-- Preloading Screen -->
-  <div id="loader-wrapper">
-    <div id="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-   </div>
-  <!-- End Preloading Screen -->
+<!--&lt;!&ndash; Preloading Screen &ndash;&gt;-->
+<!--<div id="loader-wrapper">-->
+  <!--<div id="loader"></div>-->
+  <!--<div class="loader-section section-left"></div>-->
+  <!--<div class="loader-section section-right"></div>-->
+ <!--</div>-->
+<!--&lt;!&ndash; End Preloading Screen &ndash;&gt;-->
   
 <!-- Include Libs & Plugins
-  ============================================ -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
-  <script type="text/javascript" src="js/themejs/libs.js"></script>
-  <script type="text/javascript" src="js/unveil/jquery.unveil.js"></script>
-  <script type="text/javascript" src="js/countdown/jquery.countdown.min.js"></script>
-  <script type="text/javascript" src="js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
-  <script type="text/javascript" src="js/datetimepicker/moment.js"></script>
-  <script type="text/javascript" src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
-  <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
-  
-  
-  <!-- Theme files
-  ============================================ -->
-  
-  
-  <script type="text/javascript" src="js/themejs/so_megamenu.js"></script>
-  <script type="text/javascript" src="js/themejs/addtocart.js"></script>
-  <script type="text/javascript" src="js/themejs/application.js"></script>
-  <script type="text/javascript" src="js/themejs/cpanel.js"></script>
-  
+============================================ -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="js/themejs/libs.js"></script>
+<script type="text/javascript" src="js/unveil/jquery.unveil.js"></script>
+<script type="text/javascript" src="js/countdown/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+<script type="text/javascript" src="js/datetimepicker/moment.js"></script>
+<script type="text/javascript" src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+
+
+<!-- Theme files
+============================================ -->
+<script type="text/javascript" src="js/themejs/application.js"></script>
+<!--<script type="text/javascript" src="js/themejs/toppanel.js"></script>-->
+<!--<script type="text/javascript" src="js/themejs/so_megamenu.js"></script>-->
+<!--<script type="text/javascript" src="js/themejs/addtocart.js"></script>  -->
+<!--<script type="text/javascript" src="js/themejs/cpanel.js"></script>-->
 </body>
-  </body>
 </html>
+
