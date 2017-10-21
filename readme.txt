@@ -33,3 +33,12 @@ All of the screens for the Purchasing process, which should include:
 Form(s) for making a purchase (1+)
 Purchase confirmation screen (1)
 A view of the shopping cart with the item(s) in it (1)
+
+Antacids
+Antibiotic Ointments
+Cough, Cold & Allergy
+Dietary Supplements
+Lotions, Creams & Ointments
+Pain Management
+Laxatives
+Vitamins & Minerals
