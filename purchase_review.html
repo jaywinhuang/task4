@@ -5,7 +5,7 @@
 
     <!-- Basic page needs
   ============================================ -->
-  <title>Purchase Confirmation</title>
+  <title>Purchase Review</title>
   <meta charset="utf-8">
     <meta name="keywords" content="" />
     <meta name="author" content="Magentech">
@@ -413,50 +413,108 @@
         <div class="page-login">
 
           <div class="account-border">
+          <h2><i class="" aria-hidden="true"></i> Order Review </h2>
             <div class="row">
               <div class="col-sm-6 new-customer">
                 <div class="well">
-                  <h2><i class="" aria-hidden="true"></i> You placed an Order For </h2>
+                  <h2><i class="" aria-hidden="true"></i> Items in your Cart </h2>
                   <div class="product-layout col-md-4 col-sm-6 col-xs-12 ">
                     <div class="left-block">
-                      <table>
+                      <div class="product-image-container lazy second_img ">
+                      </div>
+                    </div>
+                  </div>
+                  <div >
+                  <div id="cart" >
+          <ul role="menu">
+            <li>
+              <table class="table table-striped">
                 <tbody>
                 <tr>
-                  <td class="text-center" style="width:100px">
+                  <td class="text-center" style="width:70px">
                     <a href="product_1.html"> <img src="image/demo/shop/product/j9.jpg" style="width:70px" alt="Medicine1" title="Medicine1" class="preview"> </a>
                   </td>
-                  <td class="text-left"> <a class="cart_product_name" href="product_1.html"> Medicine1</a> </td>
+                  <td class="text-left"> <a class="cart_product_name" href="product_1.html">Medicine 1</a> </td>
+                  <td class="text-center"> x1 </td>
+                  <td class="text-center"> $120.20 </td>
+                  <td class="text-right">
+                    <a href="product_1.html" class="fa fa-edit"></a>
+                  </td>
+                  <td class="text-right">
+                    <a onclick="" class="fa fa-times fa-delete"></a>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="text-center" style="width:100px">
-                    <a href="product_2.html"> <img src="image/demo/shop/product/j4.jpg" style="width:70px" alt="Medicine2" title="Medicine2" class="preview"> </a>
+                  <td class="text-center" style="width:70px">
+                    <a href="product_1.html"> <img src="image/demo/shop/product/j4.jpg" style="width:70px" alt="Medicine2" title="Medicine2" class="preview"> </a>
                   </td>
-                  <td class="text-left"> <a class="cart_product_name" href="product_2.html"> Medicine2</a> </td>
+                  <td class="text-left"> <a class="cart_product_name" href="product_1.html">Medicine 2</a> </td>
+                  <td class="text-center"> x1 </td>
+                  <td class="text-center"> $60.00 </td>
+                  <td class="text-right">
+                    <a href="product_1.html" class="fa fa-edit"></a>
+                  </td>
+                  <td class="text-right">
+                    <a onclick="" class="fa fa-times fa-delete"></a>
+                  </td>
                 </tr>
                 </tbody>
               </table>
             </li>
+            <li>
+              <div>
+                <table class="table table-bordered">
+                  <tbody>
+                  <tr>
+                    <td class="text-left"><strong>Sub-Total</strong>
+                    </td>
+                    <td class="text-right">$180.20</td>
+                  </tr>
+                  <tr>
+                    <td class="text-left"><strong>Eco Tax (-2.00)</strong>
+                    </td>
+                    <td class="text-right">$2.00</td>
+                  </tr>
+                  <tr>
+                    <td class="text-left"><strong>Total</strong>
+                    </td>
+                    <td class="text-right">$182.20</td>
+                  </tr>
+                  </tbody>
                 </table>
-                    </div>
-                  </div>
-                  <div>
-                  <div>
-                  </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--//cart-->
+
 
                 </div><!-- right block -->
+
                 </div>
 
 
-                
+                <div class="bottom-form">
+                  <a href="product_1.html" class="btn btn-default pull-left">Go Back</a>
+                </div>
               </div>
 
                 <div class="col-sm-6 customer-login">
-                  <div class="well">
-                  <h1><i class="" aria-hidden="true"></i>Thank you for shopping with us !!!</h1>
-                  <p>Your order will be delivered by October 24, 2017</p>
+                  <div class="well ">
+                    <h4><i class="" aria-hidden="true"></i>YOUR ITEMS WILL BE SHIPPED TO- </h4>
+                    <div class = "right-block">
+                      <p>&emsp; &emsp; &emsp;221 B, Baker's Street,</p>
+                      <p>&emsp; &emsp; &emsp;St. Marylebone, London,</p>
+                      <p>&emsp; &emsp; &emsp;NW1 6XE, United Kingdon.</p>
+                    </div>
+                    <h2><i class="" aria-hidden="true"></i></h2>
+                    <h4><i class="" aria-hidden="true"></i>ESTIMATED DELIVERY DATE - October 24th, 2017 (Two day shipping) </h4>
+                    <h2><i class="" aria-hidden="true"></i></h2>
+                    <h4><i class="" aria-hidden="true"></i>Hit the "Go To Payment" Button to Proceed with payment. To add more items select "Go Back".</h4>
+
                 </div>
                 <div class="bottom-form">
-                  <a href="index.html" class="btn btn-default pull-right">Continue Shopping</a>
+                  <a href="confirmation.html" class="btn btn-default pull-right">Go to Payment</a>
                 </div>
                 </div>
             </div>
