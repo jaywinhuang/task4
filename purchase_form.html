@@ -4,7 +4,7 @@
 
   <!-- Basic page needs
   ============================================ -->
-  <title>Home</title>
+  <title>Checkout</title>
   <meta charset="utf-8">
   <meta name="keywords" content="" />
   <meta name="author" content="Magentech">
@@ -80,8 +80,8 @@
                 </a>
                 <ul class="dropdown-menu btn-xs">
                   <li> <a href="#">(€)&nbsp;Euro</a></li>
-                  <li> <a href="#">(£)&nbsp;Pounds	</a></li>
-                  <li> <a href="#">($)&nbsp;US Dollar	</a></li>
+                  <li> <a href="#">(£)&nbsp;Pounds  </a></li>
+                  <li> <a href="#">($)&nbsp;US Dollar </a></li>
                 </ul>
               </form>
             </div>
@@ -124,9 +124,9 @@
               <div id="search0" class="search input-group col-sm-offset-1">
 
                 <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Search" name="search">
-						<span class="input-group-btn">
-						<button type="submit" class="button-search btn btn-primary" name="submit_search"><i class="fa fa-search"></i></button>
-						</span>
+            <span class="input-group-btn">
+            <button type="submit" class="button-search btn btn-primary" name="submit_search"><i class="fa fa-search"></i></button>
+            </span>
               </div>
               <input type="hidden" name="route" value="product/search" />
             </form>
@@ -401,128 +401,155 @@
     <!-- //end Navbar switcher -->
   </header>
   <!-- //Header Container  -->
-	<!-- Main Container  -->
-	<div class="main-container container">
-		<div class="row">
-			<div id="content" class="col-sm-12">
-				<h2 class="title">Enter Shipping Details</h2>
-				
-				<form action="register-success.html" method="post" enctype="multipart/form-data" class="form-horizontal account-register clearfix">
-				<fieldset id="address">
-						<legend>Your Address</legend>
-						<div class="form-group">
-							<label class="col-sm-2 control-label" for="input-company">Address Line1</label>
-							<div class="col-sm-10">
-								<input type="text" name="company" value="" placeholder="Company" id="input-company" class="form-control">
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-address-1">Address Line2</label>
-							<div class="col-sm-10">
-								<input type="text" name="address_1" value="" placeholder="Address 1" id="input-address-1" class="form-control">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-sm-2 control-label" for="input-address-2">Address Line3</label>
-							<div class="col-sm-10">
-								<input type="text" name="address_2" value="" placeholder="Address 2" id="input-address-2" class="form-control">
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-city">City</label>
-							<div class="col-sm-10">
-								<input type="text" name="city" value="" placeholder="City" id="input-city" class="form-control">
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-postcode">Post Code</label>
-							<div class="col-sm-10">
-								<input type="text" name="postcode" value="" placeholder="Post Code" id="input-postcode" class="form-control">
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-country">Country</label>
-							<div class="col-sm-10">
-								<select name="country_id" id="input-country" class="form-control">
-									<option value=""> --- Please Select --- </option>
-									<option value="244">Aaland Islands</option>
-									<option value="1">Afghanistan</option>
-									<option value="2">Albania</option>
-									<option value="3">Algeria</option>
-									<option value="4">American Samoa</option>
-									<option value="5">Andorra</option>
-									<option value="6">Angola</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-zone">Region / State</label>
-							<div class="col-sm-10">
-								<select name="zone_id" id="input-zone" class="form-control">
-									<option value=""> --- Please Select --- </option>
-									<option value="3513">Aberdeen</option>
-									<option value="3514">Aberdeenshire</option>
-									<option value="3515">Anglesey</option>
-									<option value="3516">Angus</option>
-								  
-								</select>
-							</div>
-						</div>
-					</fieldset>
-					
-					<fieldset id="account">
-						<legend>Payment Details</legend>
-						<div class="form-group required" style="display: none;">
-							<label class="col-sm-2 control-label">Customer Group</label>
-							<div class="col-sm-10">
-								<div class="radio">
-									<label>
-										<input type="radio" name="customer_group_id" value="1" checked="checked"> Default
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-firstname">Card Number</label>
-							<div class="col-sm-10">
-								<input type="text" name="firstname" value="" placeholder="First Name" id="input-firstname" class="form-control">
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-lastname">Expiry</label>
-							<div class="col-sm-10">
-								<input type="text" name="lastname" value="" placeholder="Last Name" id="input-lastname" class="form-control">
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-email">CVV Number</label>
-							<div class="col-sm-10">
-								<input type="email" name="email" value="" placeholder="E-Mail" id="input-email" class="form-control">
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-telephone">Card Holder's Name</label>
-							<div class="col-sm-10">
-								<input type="tel" name="telephone" value="" placeholder="Telephone" id="input-telephone" class="form-control">
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-fax">Zip</label>
-							<div class="col-sm-10">
-								<input type="text" name="fax" value="" placeholder="Fax" id="input-fax" class="form-control">
-							</div>
-						</div>
-					</fieldset>
-					<div class="buttons">
-						<div class="pull-right"><a href="" class="agree"></a>
-							<input type="submit" value="Make Payment" class="btn btn-primary"><a href="confirmation.html"></a> </input>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<!-- //Main Container -->
+  <!-- Main Container  -->
+  <div class="main-container container">
+    <div class="row">
+      <div id="content" class="col-sm-12">
+        <h2 class="title">Shipping Details</h2>
+
+        <form action="">
+        <label for="input-company">Is your Shipping Address different from Billing Address ? &emsp; &emsp; &emsp;</label>
+          <input type="radio" name="gender" value="male"> Yes &emsp; &emsp; &emsp;
+          <input type="radio" name="gender" value="female"> No
+        </form>
+        
+        <form action="register-success.html" method="post" enctype="multipart/form-data" class="form-horizontal account-register clearfix">
+        <fieldset id="address">
+            <legend>Enter Shipping Address (Only if different from billing address)</legend>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="input-company">Address Line1</label>
+              <div class="col-sm-10">
+                <input type="text" name="company" value="" placeholder="Company" id="input-company" class="form-control" disabled>
+              </div>
+            </div>
+            <div class="form-group required">
+              <label class="col-sm-2 control-label" for="input-address-1">Address Line2</label>
+              <div class="col-sm-10">
+                <input type="text" name="address_1" value="" placeholder="Address 1" id="input-address-1" class="form-control" disabled>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="input-address-2">Address Line3</label>
+              <div class="col-sm-10">
+                <input type="text" name="address_2" value="" placeholder="Address 2" id="input-address-2" class="form-control" disabled>
+              </div>
+            </div>
+            <div class="form-group required">
+              <label class="col-sm-2 control-label" for="input-city">City</label>
+              <div class="col-sm-10">
+                <input type="text" name="city" value="" placeholder="City" id="input-city" class="form-control" disabled>
+              </div>
+            </div>
+            <div class="form-group required">
+              <label class="col-sm-2 control-label" for="input-postcode">Post Code</label>
+              <div class="col-sm-10">
+                <input type="text" name="postcode" value="" placeholder="Post Code" id="input-postcode" class="form-control" disabled>
+              </div>
+            </div>
+            <div class="form-group required">
+              <label class="col-sm-2 control-label" for="input-country" disabled>Country</label>
+              <div class="col-sm-10">
+                <select name="country_id" id="input-country" class="form-control" disabled>
+                  <option value=""> --- Please Select --- </option>
+                  <option value="244">Aaland Islands</option>
+                  <option value="1">Afghanistan</option>
+                  <option value="2">Albania</option>
+                  <option value="3">Algeria</option>
+                  <option value="4">American Samoa</option>
+                  <option value="5">Andorra</option>
+                  <option value="6">Angola</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group required">
+              <label class="col-sm-2 control-label" for="input-zone">Region / State</label>
+              <div class="col-sm-10">
+                <select name="zone_id" id="input-zone" class="form-control" disabled>
+                  <option value=""> --- Please Select --- </option>
+                  <option value="3513">Aberdeen</option>
+                  <option value="3514">Aberdeenshire</option>
+                  <option value="3515">Anglesey</option>
+                  <option value="3516">Angus</option>
+                  
+                </select>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset id="Delivery Mode">
+            <legend>Shipping Modes</legend>
+          
+            <div class="form-group required">
+              <label class="col-sm-2 control-label" for="input-firstname">Select a mode of Shipping</label>
+              <div class="col-sm-10">
+                <input type="radio" name="gender" value="male"> Expedited Shipping (2 Day Delivery) &emsp; &emsp;<br>
+                <input type="radio" name="gender" value="female"> Normal Shipping (3-4 Business Days)
+              </div>
+            </div>
+          </fieldset>
+          <fieldset id="account">
+            <legend>Payment Details</legend>
+            <label for="input-company">Select your mode of payment &emsp; &emsp;</label>
+          <input type="radio" name="gender" value="male"> Credit Card &emsp; &emsp;
+          <input type="radio" name="gender" value="female"> Debit Card
+            <div class="form-group required" style="display: none;">
+              <label class="col-sm-2 control-label">Customer Group</label>
+              <div class="col-sm-10">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="customer_group_id" value="1" checked="checked"> Default
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group required">
+              <label class="col-sm-2 control-label" for="input-firstname">Card Number</label>
+              <div class="col-sm-4">
+                <input type="text" name="firstname" value="" placeholder="16-digit Card Number" id="input-firstname" class="form-control">
+              </div>
+            </div>
+            <div class="form-group required">
+              <label class="col-sm-2 control-label" for="input-lastname">Expiry</label>
+              <div class="col-sm-1">
+                <input type="text" name="lastname" value="" placeholder="mm/yy" id="input-lastname" class="form-control">
+              </div>
+            </div>
+            <div class="form-group required">
+              <label class="col-sm-2 control-label" for="input-email">CVV Number</label>
+              <div class="col-sm-1">
+                <input type="email" name="email" value="" placeholder="XXX" id="input-email" class="form-control">
+              </div>
+            </div>
+            <div class="form-group required">
+              <label class="col-sm-2 control-label" for="input-telephone">Card Holder's Name</label>
+              <div class="col-sm-6">
+                <input type="tel" name="telephone" value="" placeholder="Card Holder's Full Name" id="input-telephone" class="form-control">
+              </div>
+            </div>
+            <div class="form-group required">
+              <label class="col-sm-2 control-label" for="input-fax">Zip</label>
+              <div class="col-sm-2">
+                <input type="text" name="fax" value="" placeholder="Zip" id="input-fax" class="form-control">
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <div class="page-login">
+        <div class="account-border">
+        <div class="col-sm-6 new-customer">
+         
+        </div>
+        <div class="col-sm-6 customer-login">
+            <div class="bottom-form">
+                  <a href="purchase_review.html" class="btn btn-default pull-right">Review Order</a>
+          </div>
+          
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //Main Container -->
 
   <!-- Footer Container -->
   <footer class="footer-container">
@@ -575,7 +602,7 @@
 
           <div class="col-sm-6 col-md-3 collapsed-block ">
             <div class="module clearfix">
-              <h3 class="modtitle">Contact Us	</h3>
+              <h3 class="modtitle">Contact Us </h3>
               <div class="modcontent">
                 <ul class="contact-address">
                   <li><span class="fa fa-map-marker"></span> My Company, 42 avenue des Champs Elysées 75000 Paris France</li>
@@ -643,7 +670,7 @@
 <script type="text/javascript" src="js/themejs/application.js"></script>
 <script type="text/javascript" src="js/themejs/toppanel.js"></script>
 <script type="text/javascript" src="js/themejs/so_megamenu.js"></script>
-<!--<script type="text/javascript" src="js/themejs/addtocart.js"></script>	-->
+<!--<script type="text/javascript" src="js/themejs/addtocart.js"></script>  -->
 <!--<script type="text/javascript" src="js/themejs/cpanel.js"></script>-->
 </body>
-</html>
+</html
