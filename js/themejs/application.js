@@ -29,8 +29,11 @@ $(document).ready(function(){
 
 	$('#cart').hover(
 		function(){$(this).addClass('open')},
-		function(){$(this).removeClass('open')}
+		function () {
+			setTimeout(disappearCart,200);
+		}
 	)
+	function disappearCart(){$("#cart").removeClass('open')}
 /* ---------------------------------------------------
 	Language and Currency Dropdowns
 -------------------------------------------------- */
