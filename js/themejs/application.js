@@ -28,9 +28,9 @@
 $(document).ready(function(){
 
 	$('#cart').hover(
-		function(){$(this).addClass('open')},
+		function(){$('#cart').addClass('open')},
 		function () {
-			setTimeout(disappearCart,200);
+			//setTimeout(disappearCart,1000);
 		}
 	)
 	function disappearCart(){$("#cart").removeClass('open')}
