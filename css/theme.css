@@ -1975,11 +1975,11 @@ ul.footer-directory {
       transform: rotate(45deg); }
     .breadcrumb li:first-child {
       border-left: 1px solid #ddd;
-      border-color: #F4A137 !important; }
+      border-color: #e1e1e1 !important; }
       .breadcrumb li:first-child a {
-        color: #F4A137; }
+        color: #e1e1e1; }
       .breadcrumb li:first-child:after, .breadcrumb li:first-child:before {
-        border-color: #F4A137; }
+        border-color: #e1e1e1; }
     .breadcrumb li + li:before {
       content: "";
       background: #fff;

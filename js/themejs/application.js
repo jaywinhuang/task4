@@ -26,6 +26,11 @@
 	[15]	Page Home2
 / -------------------------------------------------------------------------------- */
 $(document).ready(function(){
+
+	$('#cart').hover(
+		function(){$(this).addClass('open')},
+		function(){$(this).removeClass('open')}
+	)
 /* ---------------------------------------------------
 	Language and Currency Dropdowns
 -------------------------------------------------- */
