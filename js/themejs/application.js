@@ -26,14 +26,17 @@
 	[15]	Page Home2
 / -------------------------------------------------------------------------------- */
 $(document).ready(function(){
-
+	var cartDisplay = null;
 	$('#cart').hover(
-		function(){$('#cart').addClass('open')},
+		function(){
+			cartDisplay = setTimeout(function(){
+				$('#cart').addClass('open')
+			}, 500);
+		},
 		function () {
-			//setTimeout(disappearCart,1000);
+			clearTimeout(cartDisplay);
 		}
 	)
-	function disappearCart(){$("#cart").removeClass('open')}
 /* ---------------------------------------------------
 	Language and Currency Dropdowns
 -------------------------------------------------- */
