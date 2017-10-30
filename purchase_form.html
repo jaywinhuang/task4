@@ -43,7 +43,7 @@
   <link id="color_scheme" href="css/theme.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
 
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 </head>
 
 <body class="common-home res layout-home1 loaded">
@@ -433,44 +433,47 @@
           <input type="radio" name="gender" value="no" checked="checked" > No
         </form>
         
-
+        
         <form action="register-success.html" method="post" enctype="multipart/form-data" class="form-horizontal account-register clearfix">
+        <div id="blank_div">
+        </div>
+        <div id="optional_address" style="display: none;">
         <fieldset id="address">
-            <legend>Enter Delivery Address (Only if different from billing address)</legend>
+            <legend>Enter New Delivery Address</legend>
             <div class="form-group">
               <label class="col-sm-2 control-label" for="input-company">Address Line1</label>
               <div class="col-sm-10">
-                <input type="text" name="company" value="" placeholder="Home Number" id="input-company" class="form-control" disabled="disabled" >
+                <input type="text" name="company" value="" placeholder="Home Number" id="input-company" class="form-control">
               </div>
             </div>
             <div class="form-group required">
               <label class="col-sm-2 control-label" for="input-address-1">Address Line2</label>
               <div class="col-sm-10">
-                <input type="text" name="address_1" value="" placeholder="Address 1" id="input-address-1" class="form-control" disabled="disabled">
+                <input type="text" name="address_1" value="" placeholder="Address 1" id="input-address-1" class="form-control">
               </div>
             </div>
             <div class="form-group">
               <label class="col-sm-2 control-label" for="input-address-2">Address Line3</label>
               <div class="col-sm-10">
-                <input type="text" name="address_2" value="" placeholder="Address 2" id="input-address-2" class="form-control" disabled="disabled">
+                <input type="text" name="address_2" value="" placeholder="Address 2" id="input-address-2" class="form-control">
               </div>
             </div>
             <div class="form-group required">
               <label class="col-sm-2 control-label" for="input-city">City</label>
               <div class="col-sm-10">
-                <input type="text" name="city" value="" placeholder="City" id="input-city" class="form-control" disabled="disabled">
+                <input type="text" name="city" value="" placeholder="City" id="input-city" class="form-control">
               </div>
             </div>
             <div class="form-group required">
               <label class="col-sm-2 control-label" for="input-postcode">Post Code</label>
               <div class="col-sm-10">
-                <input type="text" name="postcode" value="" placeholder="Post Code" id="input-postcode" class="form-control" disabled="disabled">
+                <input type="text" name="postcode" value="" placeholder="Post Code" id="input-postcode" class="form-control">
               </div>
             </div>
             <div class="form-group required">
               <label class="col-sm-2 control-label" for="input-country" disabled>Country</label>
               <div class="col-sm-10">
-                <select name="country_id" id="input-country" class="form-control" disabled="disabled">
+                <select name="country_id" id="input-country" class="form-control">
                   <option value=""> --- Please Select --- </option>
                   <option value="244">Aaland Islands</option>
                   <option value="1">Afghanistan</option>
@@ -485,7 +488,7 @@
             <div class="form-group required">
               <label class="col-sm-2 control-label" for="input-zone">Region / State</label>
               <div class="col-sm-10">
-                <select name="zone_id" id="input-zone" class="form-control" disabled="disabled">
+                <select name="zone_id" id="input-zone" class="form-control">
                   <option value=""> --- Please Select --- </option>
                   <option value="3513">Aberdeen</option>
                   <option value="3514">Aberdeenshire</option>
@@ -496,6 +499,15 @@
               </div>
             </div>
           </fieldset>
+          </div>
+          </form>
+          <script type="text/javascript">
+            $("input[name='gender']:radio")
+            .change(function() {
+              $("#optional_address").toggle($(this).val() == "yes");
+              $("#blank_div").toggle($(this).val() == "no"); });
+          </script>
+          <form action="register-success.html" method="post" enctype="multipart/form-data" class="form-horizontal account-register clearfix">
           <fieldset id="Delivery Mode">
             <legend>Shipping Modes</legend>
           
@@ -507,6 +519,8 @@
               </div>
             </div>
           </fieldset>
+          </form>
+          <form action="register-success.html" method="post" enctype="multipart/form-data" class="form-horizontal account-register clearfix">
           <fieldset id="account">
             <legend>Payment Details</legend>
             <label for="input-company">Select your mode of payment &emsp; &emsp;</label>
