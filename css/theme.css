@@ -5955,6 +5955,10 @@ ul {
 }
 
 /*------- tab-bg -----*/
+.ey
+ {
+  display:inline-block;
+ } 
 
 .tab-bg {
   border-bottom: 1px solid rgb(235, 235, 235);
