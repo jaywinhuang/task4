@@ -43,6 +43,11 @@
 	<link id="color_scheme" href="css/theme.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
 
+<style>
+.checked {
+    color: orange;
+}
+</style>
 
 </head>
 
@@ -413,6 +418,87 @@
 			<!--Left Part Start -->
 			<aside class="col-sm-4 col-md-3" id="column-left">
 				<div class="module menu-category titleLine">
+			<h3 class="modtitle">Filters</h3>	
+	
+	<div >
+	<div >
+			
+			<div>
+				<p class="cutom-parent">Brands</p>
+				<ul >
+					<form action="/action_page.php">
+  						<input type="checkbox" name="vehicle" value="Bike" checked> All<br>
+  						<input type="checkbox" name="vehicle" value="Bike"> Brand 1<br>
+  						<input type="checkbox" name="vehicle" value="Car" > Brand 2<br>
+  						<input type="checkbox" name="vehicle" value="Car" > Brand 3<br>
+  						<input type="checkbox" name="vehicle" value="Car" > Brand 4<br>
+					</form>
+				</ul>
+			</div>
+
+			<div>
+				<p></p>
+				<p class="cutom-parent">Price Range</p>
+				<ul >
+					<select id="my_min" class="price_range">
+      					<option value="0">0</option>
+      					<option value="10">10</option>
+      					<option value="20">20</option>
+      					<option value="30">30</option>
+      					<option value="40">40</option>
+    				</select>
+    				<select id="my_max" class="price_range">
+      					<option value="0">0</option>
+      					<option value="10">10</option>
+      					<option value="20">20</option>
+      					<option value="30">30</option>
+      					<option value="40">40</option>
+    				</select>
+    				<p>Min &emsp; Max</p>
+    				<input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+    			</ul>
+  				</p>
+			</div>
+				
+			<div>
+				<p></p>
+				<p class="cutom-parent">Average Customer Review</p>
+				<div>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked "></span>
+					<span class="fa fa-star "></span><a >&emsp;and Above </a>
+				</div>
+
+				<div>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star"></span> <a >&emsp;and Above </a>
+    			</div>
+
+    			<div>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star"></span> <a >&emsp;and Above </a>
+    			</div>
+
+    			<div>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star"></span> <a >&emsp;and Above </a>
+    			</div>
+
+    			<p style="margin-bottom: 40px;"></p>
+			</div>
+	</div>
+	</div>
 	<h3 class="modtitle">Categories</h3>
 	<div class="modcontent">
 		<div class="box-category">
@@ -462,7 +548,6 @@
 				<li class=""><a href="category.html" class="cutom-parent">Vitamins & Mineralsn</a><span class="dcjq-icon"></span></li>
 			</ul>
 		</div>
-		
 	</div>
 </div>
 
